@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="css/datepicker.css" rel="stylesheet" type="text/css" />
+
+<!-- Documentation can be found here: https://github.com/freqdec/datePicker -->
+<script type="text/javascript" src="js/datepicker.js">
+{"describedby":"fd-dp-aria-describedby"}
+</script>
+
+<style type="text/css">
+body{font-family:Arial, Helvetica, sans-serif !important; font-size:12px !important; background-color:#FFF !important;}
+div.dp-popup{background:#FFF !important;}
+a.dp-choose-date{ float:right; margin:0; margin-left:4px;}
+body		{ margin:0; padding:0; }
+p			{ margin:0; padding:0; }
+#testform	{ margin:0; padding:0; margin:12px 0 0 12px; }
+</style>
+
+</head>
+<body>
+	<form id="testform" method="post" action="">
+
+	<p>
+	Date in dd-MMM-yyyy format: <input id="processDate" name="processDate" tabindex="1" onkeydown="return false;" value="02-Jun-2014" class="w16em" readonly="readonly" type="text" value="02-Jun-2014"/>
+	
+	
+	
+			<script type="text/javascript">	
+	         var opts = {     
+		                 formElements:{"processDate":"d-ds-m-ds-y" },
+		                 noFadeEffect:true,
+		                 showWeeks:false,
+		                 disableTodayButton:true,
+		                 bespokeTabindex:2,			
+                         rangeLow:"20130502",  //YYYYMMDD
+                         rangeHigh:"20140603" //YYYYMMDD
+	                    };        
+	         datePickerController.createDatePicker(opts);
+            </script>
+    </p>
+	</form>
+</body>
+
+</html>
